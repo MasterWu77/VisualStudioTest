@@ -17,7 +17,7 @@ namespace Github_Test
             InitializeComponent();
         }
 
-        int var1;
+        int var1; int var2; int total = 0;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -32,10 +32,14 @@ namespace Github_Test
             }
            
         }
-        
-        private void button2_Click(object sender, EventArgs e)
+       
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello World");
+            var1 = Convert.ToInt32(textBox1.Text);
+            var2 = Convert.ToInt32(textBox2.Text);
+            total = var1 + var2;
+            MessageBox.Show(Convert.ToString(total));
         }
     }
 }
