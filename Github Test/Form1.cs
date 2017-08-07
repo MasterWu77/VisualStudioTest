@@ -36,10 +36,10 @@ namespace Github_Test
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            var1 = Convert.ToInt32(textBox1.Text);
-            var2 = Convert.ToInt32(textBox2.Text);
-            total = var1 + var2;
-            MessageBox.Show(Convert.ToString(total));
+            var1 = Convert.ToInt32(textBox1.Text); //takes input and puts into variable
+            var2 = Convert.ToInt32(textBox2.Text); //takes input and puts into variable
+            total = var1 + var2; //adds the two variables together to total
+            MessageBox.Show(Convert.ToString(total)); //outputs the final total
         }
     }
 }
