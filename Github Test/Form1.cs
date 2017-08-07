@@ -17,12 +17,20 @@ namespace Github_Test
             InitializeComponent();
         }
 
-        string var1;
+        int var1;
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var1 = textBox1.Text;
-            MessageBox.Show(var1);
+            try
+            {
+                var1 = Convert.ToInt32(textBox1.Text);
+                MessageBox.Show(Convert.ToString(var1));
+            }
+            catch
+            {
+                MessageBox.Show("Please enter only numbers!");
+            }
+           
         }
         
         private void button2_Click(object sender, EventArgs e)
