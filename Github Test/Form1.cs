@@ -24,5 +24,10 @@ namespace Github_Test
             var1 = textBox1.Text;
             MessageBox.Show(var1);
         }
+        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello World");
+        }
     }
 }
