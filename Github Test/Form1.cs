@@ -23,8 +23,8 @@ namespace Github_Test
         {
             try
             {
-                var1 = Convert.ToInt32(textBox1.Text);
-                MessageBox.Show(Convert.ToString(var1));
+                var1 = Convert.ToInt32(textBox1.Text); //comments
+                MessageBox.Show(Convert.ToString(var1)); //comments
             }
             catch
             {
